@@ -1,0 +1,6 @@
+DELIMITER //
+CREATE PROCEDURE GetMaxQuantity()
+BEGIN
+    SELECT quantity FROM orders ORDER BY quantity DESC LIMIT 1;
+END //
+DELIMITER ;
